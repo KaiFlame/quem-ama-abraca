@@ -55,6 +55,7 @@
       max-width: 1000px;
       height: 550px;
       background: #fff;
+      transition: height 0.3s ease;
     }
 
     footer {
@@ -79,19 +80,47 @@
       padding: 5px;
     }
 
-    /* Responsivo */
+    /* Responsivo - Tablet */
     @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
       iframe {
-        height: 400px;
+        height: 420px;
+      }
+      audio {
+        max-width: 95%;
       }
     }
 
+    /* Responsivo - Celular */
     @media (max-width: 480px) {
-      header h1 {
-        font-size: 1.5rem;
+      header {
+        padding: 18px 10px;
       }
+
+      header h1 {
+        font-size: 1.4rem;
+        line-height: 1.4;
+      }
+
+      main {
+        padding: 15px;
+      }
+
       iframe {
-        height: 300px;
+        height: 280px; /* Mais proporcional para telas pequenas */
+        width: 100%;
+      }
+
+      footer {
+        padding: 12px;
+      }
+
+      audio {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 8px;
       }
     }
   </style>
@@ -100,7 +129,7 @@
 </head>
 <body>
   <header>
-    <h1>Quem ama, abraça!</h1>
+    <h1><h1>Quem ama, abraça!🫂</h1></h1>
   </header>
 
   <main>
