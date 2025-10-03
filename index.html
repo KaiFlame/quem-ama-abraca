@@ -12,9 +12,9 @@
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #0d0d0d;
-      color: #f2f2f2;
+      font-family: 'Comic Neue', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(180deg, #fdfbfb 0%, #ebedee 100%);
+      color: #333;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -24,16 +24,18 @@
     header {
       width: 100%;
       text-align: center;
-      padding: 20px 10px;
-      background: linear-gradient(90deg, #111, #222);
-      box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+      padding: 25px 15px;
+      background: linear-gradient(90deg, #ffecd2, #fcb69f);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
     }
 
     header h1 {
-      font-size: 1.8rem;
+      font-size: 2rem;
       letter-spacing: 1px;
-      color: #00d600;
-      text-shadow: 0 0 8px rgba(47, 206, 82, 0.6);
+      color: #444;
+      font-weight: bold;
     }
 
     main {
@@ -41,34 +43,40 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 20px;
+      padding: 25px;
       width: 100%;
     }
 
     iframe {
       border: none;
-      border-radius: 12px;
-      box-shadow: 0 0 25px rgba(0,0,0,0.8);
-      width: 90%;
+      border-radius: 20px;
+      box-shadow: 0 4px 25px rgba(0,0,0,0.15);
+      width: 92%;
       max-width: 1000px;
       height: 550px;
+      background: #fff;
     }
 
     footer {
       width: 100%;
-      background: #111;
-      padding: 15px;
+      background: linear-gradient(90deg, #a1c4fd, #c2e9fb);
+      padding: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
-      box-shadow: 0 -2px 10px rgba(0,0,0,0.6);
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      box-shadow: 0 -4px 12px rgba(0,0,0,0.15);
     }
 
     audio {
-      width: 90%;
-      max-width: 1000px;
+      width: 92%;
+      max-width: 800px;
+      border-radius: 10px;
       outline: none;
-      filter: drop-shadow(0 0 8px rgba(255, 60, 60, 0.4));
+      background: #fff;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+      padding: 5px;
     }
 
     /* Responsivo */
@@ -80,17 +88,19 @@
 
     @media (max-width: 480px) {
       header h1 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
       }
       iframe {
         height: 300px;
       }
     }
   </style>
+  <!-- Fonte divertida para o título -->
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>HQ Interativa com Áudio</h1>
+    <h1>Quem ama, abraça!</h1>
   </header>
 
   <main>
@@ -105,12 +115,11 @@
   </main>
 
   <footer>
-    <!-- Player de áudio (link direto do Google Drive) -->
-<audio controls>
-  <source src="Parte1.wav" type="audio/wav">
-  Seu navegador não suporta áudio.
-</audio>
-
-
+    <!-- Player de áudio -->
+    <audio controls>
+      <source src="Parte1.wav" type="audio/wav">
+      Seu navegador não suporta áudio.
+    </audio>
+  </footer>
 </body>
 </html>
