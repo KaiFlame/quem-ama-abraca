@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>HQ Interativa com Áudio</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0d0d0d;
+      color: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      width: 100%;
+      text-align: center;
+      padding: 20px 10px;
+      background: linear-gradient(90deg, #111, #222);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+      color: #ff3c3c;
+      text-shadow: 0 0 8px rgba(255, 60, 60, 0.6);
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      width: 100%;
+    }
+
+    iframe {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.8);
+      width: 90%;
+      max-width: 1000px;
+      height: 550px;
+    }
+
+    footer {
+      width: 100%;
+      background: #111;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.6);
+    }
+
+    audio {
+      width: 90%;
+      max-width: 1000px;
+      outline: none;
+      filter: drop-shadow(0 0 8px rgba(255, 60, 60, 0.4));
+    }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+      iframe {
+        height: 400px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+      iframe {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HQ Interativa com Áudio</h1>
+  </header>
+
+  <main>
+    <!-- Flipbook PubHTML5 -->
+    <iframe 
+      src="https://online.pubhtml5.com/yyqgt/ueot/"  
+      seamless="seamless" 
+      scrolling="no" 
+      allowtransparency="true" 
+      allowfullscreen="true">
+    </iframe>
+  </main>
+
+  <footer>
+    <!-- Player de áudio (link direto do Google Drive) -->
+<audio controls>
+  <source src="Parte1.wav" type="audio/wav">
+  Seu navegador não suporta áudio.
+</audio>
+
+
+</body>
+</html>
